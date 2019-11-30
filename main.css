@@ -1,0 +1,167 @@
+/* *****************************************************************************
+Title: Main CSS
+Use: So HTML5 semantic elements can be formatted correctly 
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: November 26, 2019
+Tested: Sept 15, 2019; Passed on Firefox and Chrome browsers.
+*/
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+/* Main styles */
+.main{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.buttons{
+    height: 40px;
+    width: 130px;
+    color: white;
+    font-size: 18px;
+    background-color: coral;
+    border: 0;
+    border-radius: 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.highlight{
+    font-size: 25px;
+    color: coral;
+    text-shadow: 2px 2px 0 white;
+}
+
+/* Header styles */
+header{
+    height: 75px;
+    background-color: cornflowerblue;
+    color: white;
+    border-bottom: 1px solid coral;
+    padding-top: 30px;
+    min-height: 80px;
+}
+header a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+#logo {
+    float: right;
+}
+#logo h1{
+    margin: 0;
+    text-shadow: 2px 3px 0 coral;
+}
+header li{
+    display: inline;
+    float: left;
+    padding: 0 15px 0 15px;
+}
+nav {
+    float: left;
+    margin-top: 10px;
+}
+.active a{
+    color: coral;
+    font-weight: bold;
+}
+a:hover{
+    color: aqua;
+    font-weight: bold;
+}
+
+/*Banner styles */
+#banner{
+    min-height: 300px;
+    background-color: azure;
+    color: coral;
+    text-align: center;
+}
+#banner h1{
+    margin-top: 50px;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+#banner p{
+    font-size: 23px;
+}
+
+/*Image styles */
+#main_col{
+    margin-top: 35px;
+}
+.locations{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    width: 31%;
+}
+.locations img{
+    width: 90%;
+}
+.destinations{
+    float: left;
+    text-align: center;
+    padding: 15px;
+    width: 40%;
+}
+.destinations img{
+    width: 90%;
+}
+.main_button{
+    text-align: center;
+}
+
+/* Table styles */
+.main_table{
+    float: left;
+    width: 60%;
+    padding-left: 2%;
+    margin-bottom: 20%;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space: normal;    
+}
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+td{
+    height: 50%;
+}
+thead {background-color: azure}
+
+/* Sidebar styles */
+#side_bar{
+    margin-top: 57px;
+    float: right;
+    width: 30%;
+    padding-right: 1%;
+    text-align: center;
+    color: white;
+}
+.feature{
+    background-color: cornflowerblue;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+/* Page footer sytlyes */
+#footer{
+    padding: 5px;
+    margin-top: 5px;
+    color: coral;
+    background-color: azure;
+    text-align: right;
+    clear: both;
+}
