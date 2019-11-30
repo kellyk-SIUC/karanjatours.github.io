@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 *****************************************************************************
 Title: Kelly Travels & Tours
@@ -37,17 +38,49 @@ Tested: Nov 10, 2019; Passed on Firefox and Chrome browsers.
         </div>
     </header>
     <!-- table -->
-    <section id="section">
-        <div class="main_section">
-            
+    <section id="contact">
+        <div class="main">
+            <h1>Start Planning your Vacation!</h1>
+            <p>Call us at 555-111-2222 or fill out the short form below to start
+                planning your next experience.
+            </p>
         </div>
     </section>
-    <div class="main">
-        <aside id="sidebar">
-        
-        </aside>   
-    </div>
-    
+    <section id="form">
+        <div class="main">
+            <form action="response.htm" method="get" class="quote">
+                <div>
+                    <label>First:</label>
+                    <input type="text" required placeholder="Name">
+                    
+                    <label>Last:</label>
+                    <input type="text" required placeholder="Name">
+                
+                    <label>Email:</label>
+                    <input type="email" required placeholder="Email Address">
+               
+                    <label>Phone:</label>
+                    <input type="Phone" required placeholder="Phone">
+                </div>
+                <div>
+                    <label>Vacation Type:</label>
+                    <select name="vacation" size="3" multiple>
+                        <option value="Cruises">Cruise</option>
+                        <option value="Group Travel">Group Travel</option>
+                        <option value="Land Travel">Land Travel</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Where do you want to travel to?</label>
+                    <textarea required placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="button1">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <!--Site footer -->
     <footer id="footer">
         <p>&copy; Copyright 2019 Karanja Tours and Travels</p>
