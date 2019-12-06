@@ -32,8 +32,7 @@ ul {
 }
 .highlight{
     font-size: 25px;
-    color: coral;
-    text-shadow: 2px 2px 0 white;
+    color: orangered;
 }
 
 /* Header styles */
@@ -67,6 +66,8 @@ header li{
 nav {
     float: left;
     margin-top: 10px;
+    overflow: hidden;
+    display: flex;
 }
 .active a{
     color: coral;
@@ -76,11 +77,14 @@ a:hover{
     color: aqua;
     font-weight: bold;
 }
+#image1{
+    float: right;
+}
 
 /*Banner styles */
 #banner{
     min-height: 300px;
-    background-color: azure;
+    background-color: whitesmoke;
     color: coral;
     text-align: center;
 }
@@ -104,7 +108,7 @@ a:hover{
     width: 31%;
 }
 .locations img{
-    width: 90%;
+    max-width: 100%;
 }
 
 .destinations{
@@ -114,7 +118,7 @@ a:hover{
     width: 45%;
 }
 .destinations img{
-    width: 90%;
+    max-width: 100%;
 }
 .main_button{
     text-align: center;
@@ -149,10 +153,10 @@ thead {background-color: whitesmoke}
     width: 30%;
     padding-right: 1%;
     text-align: center;
-    color: white;
+    color: black;
 }
 .feature{
-    background-color: cornflowerblue;
+    background-color: lightgray;
     margin-top: 15px;
     padding: 15px;
 }
@@ -167,7 +171,10 @@ thead {background-color: whitesmoke}
 /* Form styles */
 .quote{
     width: 90%;
-    padding: 5px;  
+    padding: 5px;
+    border-style: inset;
+    border-color: lightgrey;
+    border-width: 3px;
 }
 input[type=text]{
     width: 40%;
@@ -218,7 +225,7 @@ textarea {
 select {
   width: 15%;
   padding: 10px 10px;
-  border: none;
+  border: 2px solid grey;
   border-radius: 4px;
   background-color: whitesmoke;
 }
@@ -235,7 +242,7 @@ select {
 /* Page footer sytlyes */
 #footer{
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 20px;
     color: coral;
     background-color: whitesmoke;
     text-align: right;
@@ -243,4 +250,60 @@ select {
 }
 #audioplayer{
     float: left;
+}
+
+/*Media Queries */
+@media(max-width: 768px){
+    #logo,
+    nav,
+    header li,
+    #image1,
+    .locations,
+    .destinations,
+    .main_table,
+    #side_bar,
+    #audioplayer{
+        float: none;
+        text-align: center;
+        width: 100%
+    }
+    header{
+        height: 150px;
+    }
+    select{
+        width: 25%
+    }
+    .button1{
+        width: 20%
+    }
+}
+@media(max-width: 479px){
+    #logo,
+    nav,
+    header li,
+    #image1,
+    .locations,
+    .destinations,
+    .main_table,
+    #side_bar,
+    #audioplayer{
+        float: none;
+        text-align: center;
+        width: 100%
+    }
+     header{
+        height: 150px;
+    }
+    select{
+        width: 25%
+    }
+    .button1{
+        width: 20%
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+        height: 100px;
+        
+    }
 }
