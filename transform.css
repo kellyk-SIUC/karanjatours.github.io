@@ -1,0 +1,10 @@
+.locations img:hover {
+	transform: scaleY(1.4);
+	-webkit-transform: scaleY(1.4);
+}
+.destinations img:hover {
+	transform: scaleY(1.4);
+	-webkit-transform: scaleY(1.4);
+}
+    
+    
