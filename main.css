@@ -251,6 +251,10 @@ select {
 #audioplayer{
     float: left;
 }
+/* Response page styles */
+.response{
+    text-align: center;
+}
 
 /*Media Queries */
 @media(max-width: 768px){
