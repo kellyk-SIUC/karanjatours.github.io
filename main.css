@@ -98,7 +98,7 @@ a:hover{
 }
 
 /*Image styles */
-#main_col{
+.main_col{
     margin-top: 35px;
 }
 .locations{
@@ -161,7 +161,7 @@ thead {background-color: whitesmoke}
     padding: 15px;
 }
 /* About styles */
-#about{
+.about{
     min-height: 50px;
     text-align: center;
     background-color: whitesmoke;
@@ -192,7 +192,7 @@ input[type=email]{
     border: 2px solid grey;
     border-radius: 1px;
 }
-input[type=phone]{
+input[type=tel]{
     width: 40%;
     padding: 20px 20px;
     margin: 8px 0;
